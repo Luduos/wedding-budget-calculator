@@ -1,4 +1,5 @@
 <script>
+  import { writable } from "svelte/store";
   import BudgetDisplay from "./BudgetDisplay.svelte";
 
   let budget = 5000;
@@ -17,7 +18,9 @@
     { name: "Sicherheit", percentage: 0.1 },
   ];
 
-  parts.sort((a,b)=>{return a.percentage > b.percentage ? -1 : 1;});
+  parts.sort((a, b) => {
+    return a.percentage > b.percentage ? -1 : 1;
+  });
 
   let sum = 0;
   parts.forEach((value) => (sum += value.percentage));
