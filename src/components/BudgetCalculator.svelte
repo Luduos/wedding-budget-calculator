@@ -28,6 +28,7 @@
 
 <BudgetDisplay bind:budget {parts} />
 
+
 <p>
   <label for="budget">Budget (€): </label>
   <input type="number" id="budget" name="budget" bind:value={budget} />

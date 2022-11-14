@@ -1,11 +1,13 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import BudgetCalculator from './lib/BudgetCalculator.svelte';
-  import Counter from './lib/Counter.svelte'
+  import BudgetCalculator from './components/BudgetCalculator.svelte';
+
+  
 </script>
 
 <main>
   <BudgetCalculator />
+  <button class="btn btn-primary">Hello daisyUI</button>
+
 </main>
 
 
