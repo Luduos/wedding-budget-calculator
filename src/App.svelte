@@ -5,8 +5,11 @@
 </script>
 
 <main>
-  <BudgetCalculator />
-  <button class="btn btn-primary">Hello daisyUI</button>
+  <div class="grid place-items-center">
+
+    <BudgetCalculator />
+  </div>
+ 
 
 </main>
 

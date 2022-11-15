@@ -28,11 +28,10 @@
 
 <BudgetDisplay bind:budget {parts} />
 
-
-<p>
-  <label for="budget">Budget (€): </label>
-  <input type="number" id="budget" name="budget" bind:value={budget} />
-</p>
-<p>
-  Summed up percentage is: {sum}
-</p>
+<div class="form-control">
+  <label class="input-group" for="budget">
+    <span>Budget</span>
+    <input class="input input-bordered" type="number" id="budget" name="budget" bind:value={budget} />
+<span>€</span>
+  </label>
+</div>

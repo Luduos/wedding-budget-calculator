@@ -10,27 +10,32 @@
   }
 </script>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Wert</th>
-      <th>Anteil</th>
-    </tr>
-  </thead>
-  <tbody>
-    {#each parts as part}
+<div class="items-center">
+  <table class="table table-compact table-zebra">
+    <thead>
       <tr>
-        <td>{part.name}</td>
-        <td>{formatValue(part.percentage * budget)}</td>
-        <td>{part.percentage * 100}%</td>
+        <th>Name</th>
+        <th>Wert</th>
+        <th>Anteil</th>
       </tr>
-    {/each}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {#each parts as part}
+        <tr>
+          <td>{part.name}</td>
+          <td>{formatValue(part.percentage * budget)}</td>
+          <td>{part.percentage * 100}%</td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
+</div>
 
 <style>
   table {
+    min-width: 50%;
+  }
+  /* table {
     display: grid;
     min-width: 100%;
 
@@ -63,5 +68,5 @@
 
   tr:nth-child(even) td {
     background: #313131;
-  }
+  } */
 </style>
