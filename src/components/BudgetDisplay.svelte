@@ -10,8 +10,7 @@
   }
 </script>
 
-<div class="items-center">
-  <table class="table table-compact table-zebra">
+  <table class="table table-compact w-full">
     <thead>
       <tr>
         <th>Name</th>
@@ -21,7 +20,7 @@
     </thead>
     <tbody>
       {#each parts as part}
-        <tr>
+        <tr class="hover">
           <td>{part.name}</td>
           <td>{formatValue(part.percentage * budget)}</td>
           <td>{part.percentage * 100}%</td>
@@ -29,7 +28,6 @@
       {/each}
     </tbody>
   </table>
-</div>
 
 <style>
   table {

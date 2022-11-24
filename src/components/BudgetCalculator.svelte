@@ -1,6 +1,8 @@
 <script>
   import { writable } from "svelte/store";
+  import ActionCard from "./ActionCard.svelte";
   import BudgetDisplay from "./BudgetDisplay.svelte";
+  import BudgetInput from "./BudgetInput.svelte";
 
   let budget = 5000;
 
@@ -26,12 +28,8 @@
   parts.forEach((value) => (sum += value.percentage));
 </script>
 
-<BudgetDisplay bind:budget {parts} />
-
-<div class="form-control">
-  <label class="input-group" for="budget">
-    <span>Budget</span>
-    <input class="input input-bordered" type="number" id="budget" name="budget" bind:value={budget} />
-<span>€</span>
-  </label>
-</div>
+<ActionCard title="Budget Overview">
+  
+  <BudgetDisplay slot="body" bind:budget {parts} />
+  <BudgetInput slot="actions" bind:budget currency="€" description="Budget" />
+</ActionCard>
