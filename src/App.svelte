@@ -7,7 +7,7 @@
 <main>
   <div class="grid place-items-center">
     <ActionCard title="Time to Wedding">
-      <DateDifference slot="actions" />
+        <DateDifference slot="actions"/>
     </ActionCard>
     <div class="divider" />
     <BudgetCalculator />

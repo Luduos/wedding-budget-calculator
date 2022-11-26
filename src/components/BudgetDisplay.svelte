@@ -33,38 +33,4 @@
   table {
     min-width: 50%;
   }
-  /* table {
-    display: grid;
-    min-width: 100%;
-
-    grid-template-columns:
-      minmax(150px, 2fr)
-      minmax(150px, 1fr)
-      minmax(150px, 1fr);
-  }
-  thead,
-  tbody,
-  tr {
-    display: contents;
-  }
-
-  th:first-child,
-  td:first-child {
-    text-align: left;
-  }
-
-  td {
-    padding: 5px 15px;
-  }
-
-  th {
-    padding: 15px;
-    background: #f9f9f9;
-    color: #242424;
-    font-size: 1.1rem;
-  }
-
-  tr:nth-child(even) td {
-    background: #313131;
-  } */
 </style>
